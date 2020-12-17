@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pipelinessampleapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pipelinessampleapp
+  template:
+    metadata:
+      labels:
+        app: pipelinessampleapp 
+    spec:
+      containers:
+        - name: pipelinessampleapp 
+          image: jcmyacrforaks.azurecr.io/pipelinessampleapp
+          ports:
+          - containerPort: 8080
