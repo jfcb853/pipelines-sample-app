@@ -66,8 +66,8 @@ The output includes credentials that you must protect. Be sure that you do not i
 ```bash
 az aks create -g aks-rg -n myakscluster \
    --node-count 1 \
-   --service-principal "6cdbcbc1-ae3f-4f82-8020-0d4fcd255405" \
-   --client-secret "Rs~HncAbvQq-B9bdj0n-9ZVYa~n4p2Z4uy" \
+   --service-principal "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+   --client-secret "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy" \
    --generate-ssh-keys
  ```  
 create an Azure Container Registry (ACR). This will be the repository for our containers used in AKS. The ACR name will have to be globally unique, meaning nobody in the world can have the same name. Time to get creative:
